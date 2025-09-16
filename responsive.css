@@ -295,16 +295,16 @@ hr {
   }
 
   /* Desktop Image Constraints */
-  .responsive-image {
-    max-width: 300px;
+  .main-content .responsive-image {
+    max-width: 300px !important;
   }
 
-  video {
-    max-width: 300px;
+  .main-content video {
+    max-width: 300px !important;
   }
 
-  .shop-image {
-    max-width: 200px;
+  .main-content .shop-image {
+    max-width: 200px !important;
   }
 }
 
