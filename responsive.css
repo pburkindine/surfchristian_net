@@ -10,7 +10,7 @@ body {
   padding: 0;
   font-family: Comic Sans MS, sans-serif;
   line-height: 1.6;
-  background-color: #f5f5f5;
+  background-color: white;
   color: #333;
 }
 
@@ -139,17 +139,15 @@ a:hover {
 .content-tile {
   flex: 1;
   padding: 20px;
-  background: #fafafa;
+  background: white;
   border-radius: 8px;
-  border: 1px solid #e0e0e0;
 }
 
 .video-tile {
   flex: 1;
   padding: 20px;
-  background: #fafafa;
+  background: white;
   border-radius: 8px;
-  border: 1px solid #e0e0e0;
 }
 
 /* Section Headers */
