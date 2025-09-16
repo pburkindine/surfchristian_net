@@ -182,6 +182,21 @@ hr {
   text-align: center;
 }
 
+/* Prayer Text Styling */
+.prayer-text {
+  font-style: italic;
+  line-height: 1.8;
+  margin: 20px 0;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid #ddd;
+}
+
+.prayer-text p {
+  margin: 10px 0;
+}
+
 /* Shop Section */
 .shop-section {
   text-align: center;
