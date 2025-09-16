@@ -201,7 +201,7 @@ hr {
 
   .main-content {
     margin: 10px;
-    padding: 20px 15px;
+    padding: 20px 15px 40px 15px; /* Extra bottom padding */
   }
 
   .logo-section {
