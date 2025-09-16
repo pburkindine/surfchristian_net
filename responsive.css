@@ -265,7 +265,7 @@ hr {
 }
 
 /* Desktop Styles */
-@media (min-width: 1024px) {
+@media (min-width: 800px) {
   .main-content {
     margin: 30px auto;
     padding: 50px 40px;
