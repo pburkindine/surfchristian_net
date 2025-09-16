@@ -96,14 +96,8 @@ p {
 }
 
 /* Images */
-img:not([height]) {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
 
-img[height] {
-  max-width: 100%;
+img {
   border-radius: 5px;
 }
 
