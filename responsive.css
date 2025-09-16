@@ -296,11 +296,11 @@ hr {
 
   /* Desktop Image Constraints */
   .responsive-image {
-    max-width: 600px;
+    max-width: 300px;
   }
 
   video {
-    max-width: 640px;
+    max-width: 300px;
   }
 
   .shop-image {
