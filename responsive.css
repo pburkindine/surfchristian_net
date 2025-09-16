@@ -51,6 +51,7 @@ body {
   height: 40px;
   width: auto;
   flex-shrink: 0;
+  margin-left: -10px;
 }
 
 /* Main Content Area */
