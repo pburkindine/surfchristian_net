@@ -6,22 +6,25 @@
 
 <link rel="shortcut icon" href="peace.ico">
 <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="responsive.css" type="text/css" media="screen" />
 <meta name="google-translate-customization" content="65f0c512c777a5fb-9d03b45ec953c41f-g647e2d800a93ced1-19"></meta>
 
 </head>
 
 <body>
-  <div id="peace" style="position: absolute; top:16px; left: 25px">
-    <div>
-      <img src="peace-dove-2.png" style="height: 75px" />
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-section">
+      <img src="peace-dove-2.png" alt="Peace Dove" class="logo-dove" />
+      <a href="index.html">
+        <img src="home.png" alt="Home" class="home-link" />
+      </a>
     </div>
-    <div>
-      <A href="index.html"><img src="home.png" border="0" height="50px"/></a>
-    </div>
-  </div>
+  </header>
 
-
-<div id="main" style="  margin-top: -4px; margin-left: 10%; width: 80%; font-size: 16px; font-family: Comic Sans MS, sans-serif; line-height: 155%; letter-spacing: .1em;">
+  <!-- Main Content -->
+  <div class="container">
+    <div class="main-content">
 
 <br/><br/><br/><br/><br/>
 <table border="0" width="100%"><tr><td>
@@ -64,14 +67,17 @@ Amen!<br/>
 
 </td><Td>&nbsp;
 </td><Td valign="top">
-<img src="peace_cross.jpg" />
-<br/><br/>
-<a href="dailybread_meme.png" target="_new"><img border=0 src="dailybread_meme.png" width="250px" /></a>
+      <img src="peace_cross.jpg" class="responsive-image" />
 
-</td></tr></table>
+      <a href="dailybread_meme.png" target="_new">
+        <img src="dailybread_meme.png" alt="Daily Bread" class="responsive-image" />
+      </a>
 
-<hr width="30%" /><br/><Br/>
-<center>
-<a href="index.html">&lt;&lt;&lt;</a> Home<br/><br/><br/>
-</center>
-</div></body>/</html>
+      <hr />
+      <div class="center">
+        <p><a href="index.html">&lt;&lt;&lt;</a> Home</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
