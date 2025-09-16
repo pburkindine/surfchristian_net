@@ -117,6 +117,14 @@ video {
   margin: 20px auto;
 }
 
+.responsive-video {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
 /* Links */
 a {
   color: #0066cc;
@@ -241,6 +249,12 @@ hr {
   .content-tile,
   .video-tile {
     padding: 15px;
+  }
+
+  /* Mobile Video Styling */
+  .responsive-video {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
