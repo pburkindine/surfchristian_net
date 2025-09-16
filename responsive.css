@@ -103,10 +103,10 @@ img {
 }
 
 .responsive-image {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
-  margin: 20px 0;
+  margin: 20px auto;
 }
 
 /* Video Elements */
@@ -114,7 +114,7 @@ video {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 20px 0;
+  margin: 20px auto;
 }
 
 /* Links */
@@ -292,6 +292,19 @@ hr {
 
   h2 {
     font-size: 2.25rem;
+  }
+
+  /* Desktop Image Constraints */
+  .responsive-image {
+    max-width: 600px;
+  }
+
+  video {
+    max-width: 640px;
+  }
+
+  .shop-image {
+    max-width: 200px;
   }
 }
 
