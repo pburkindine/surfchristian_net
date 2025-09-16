@@ -53,6 +53,7 @@
   <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.surfchristian.net/sitemap.xml">
   <link rel="shortcut icon" href="peace.ico">
   <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="responsive.css" type="text/css" media="screen" />
   <meta name="google-translate-customization" content="65f0c512c777a5fb-9d03b45ec953c41f-g647e2d800a93ced1-19">
   </meta>
 
@@ -160,20 +161,20 @@
 
 </head>
 
-<body style="margin-top: 50px;">
-  <div id="peace" style="position: absolute; top:16px; left: 25px">
-    <div>
-      <img src="peace-dove-2.png" style="height: 75px" />
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-section">
+      <img src="peace-dove-2.png" alt="Peace Dove" class="logo-dove" />
+      <a href="index.html">
+        <img src="home.png" alt="Home" class="home-link" />
+      </a>
     </div>
-    <div>
-      <A href="index.html"><img src="home.png" border="0" height="50px" /></a>
-    </div>
-  </div>
+  </header>
 
-
-
-  <div id="main"
-    style="  margin-top: -4px; margin-left: 10%; width: 80%; font-size: 16px; font-family: Comic Sans MS, sans-serif; line-height: 155%; letter-spacing: .1em;">
+  <!-- Main Content -->
+  <div class="container">
+    <div class="main-content">
 
     <h4>Call it, say...</h4>
     <h2 style="text-decoration: underline">"surf Christian"...</h2>
@@ -183,23 +184,20 @@
     <!--h4>"retired Christianity", maybe...</h4-->
 
 
-    <hr width="30%" />
-    <center>
-      <div style="width: 75%">
-        <!-- <h5>No disrespect, know what I mean, Vern?</h5><br/> -->
-        We ain't here to proselytize. All the religions are great. Parable of the <a
+    <hr />
+    <div class="center">
+      <p>We ain't here to proselytize. All the religions are great. Parable of the <a
           href="https://en.wikipedia.org/wiki/Parable_of_the_Good_Samaritan" target="_blank">Good Samaritan</a> shows
-        it's what's inside that's holy.<br /><br />
+        it's what's inside that's holy.</p>
 
-        "God's name is Steve; the heck you say, it's Bob." Calm down, ya'll.<br /><br />
+      <p>"God's name is Steve; the heck you say, it's Bob." Calm down, ya'll.</p>
 
-        Know what I mean, Vern?<br /><br />
-        <a href="hey_vern.mp4" target="_blank"><img
-            src="ernest-p-worrel-1.jpg" border=0 height="100px" /></a>
-        <br /><br />
-      </div>
+      <p>Know what I mean, Vern?</p>
 
-    </center>
+      <a href="hey_vern.mp4" target="_blank">
+        <img src="ernest-p-worrel-1.jpg" alt="Ernest P. Worrell" class="responsive-image" />
+      </a>
+    </div>
     <hr width="30%" />
     <table border="0" width="100%">
       <tr>
@@ -349,26 +347,19 @@ Also, you know, this descendant temple?  A temple's a place where we go to be wi
       <br /><Br />      <br /><br /><br />
 
       <!-- CafePress Shop -->
-      <hr width="30%" /><br /><br />
-      <a href="https://cafepress.com/shop/surfChristian" target="_blank">
-        <img src="keychain.png" alt="Surf Christian Shop" style="max-width: 200px; height: auto;" />
-      </a><br/><br/>
-      <span style="font-size: 12px; color: #444;">Want merch? (0% profit)</span><br/><br/>
+      <!-- Shop Section -->
+      <div class="shop-section">
+        <a href="https://cafepress.com/shop/surfChristian" target="_blank">
+          <img src="keychain.png" alt="Surf Christian Shop" class="shop-image" />
+        </a>
+        <p class="shop-text">Surf Christian Shop (0% profit)</p>
+      </div>
 
-      <hr width="30%" /><br /><br />
-
-      <table border="0">
-        <tr>
-          <td valign="middle">back to </td>
-          <td valign="middle"><a href="http://www.copyleftout.net" target="_blank" border="0"><img
-                src="http://www.moderateParty.net/img/roach.png" height="25px" border="0" /></a></td>
-          <td valign="middle"><a href="http://www.copyleftout.net" target="_blank">copy left out </a></td>
-          <td valign="middle"><a href="http://www.copyleftout.net" target="_blank" border="0"><img
-                src="http://www.moderateParty.net/img/roach.png" height="25px" border="0" /></a></td>
-        </tr>
-      </table>
-      <br /><br /><br />
-    </center>
+      <!-- Footer -->
+      <div class="center">
+        <p>back to <a href="http://www.copyleftout.net" target="_blank">copy left out</a></p>
+      </div>
+    </div>
   </div>
 </body>
 
