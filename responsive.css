@@ -297,15 +297,15 @@ hr {
 
   /* Desktop Image Constraints */
   .main-content .responsive-image {
-    max-width: 300px !important;
+    max-width: 300px;
   }
 
   .main-content video {
-    max-width: 300px !important;
+    max-width: 300px;
   }
 
   .main-content .shop-image {
-    max-width: 200px !important;
+    max-width: 200px;
   }
 
   /* Desktop HR Styling */
