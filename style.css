@@ -37,6 +37,15 @@
   padding: 10px;
 }
 
+.optimus {
+  order: 0 !important;
+}
+
+.main-content {
+  order: 1 !important;
+}
+
+
 .section-header {
   font-size: 1.5rem;
 }
