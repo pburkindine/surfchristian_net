@@ -45,6 +45,13 @@
   order: 1 !important;
 }
 
+#vern {
+  margin: 0 auto;
+  max-width: 700px;
+}
+#vern p {
+  font-size: 0.9rem !important;
+}
 
 .section-header {
   font-size: 1.5rem;
