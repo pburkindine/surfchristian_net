@@ -354,30 +354,34 @@ hr {
   }
 }
 
-/* Readable Text Width Constraints */
-.content-tile {
+/* Readable Text Width Constraints - only for standalone content-tile (not in flexo) */
+body > .content-tile,
+.content-tile:not(.flexo > .content-tile) {
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Mobile - slightly wider for small screens */
+/* Mobile - full width for small screens */
 @media (max-width: 767px) {
-  .content-tile {
+  body > .content-tile,
+  .content-tile:not(.flexo > .content-tile) {
     max-width: 100%;
   }
 }
 
 /* Tablet and up - constrain for readability */
 @media (min-width: 768px) {
-  .content-tile {
+  body > .content-tile,
+  .content-tile:not(.flexo > .content-tile) {
     max-width: 750px;
   }
 }
 
 /* Desktop - optimal reading width */
 @media (min-width: 1024px) {
-  .content-tile {
+  body > .content-tile,
+  .content-tile:not(.flexo > .content-tile) {
     max-width: 800px;
   }
 }
