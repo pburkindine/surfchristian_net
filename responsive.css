@@ -354,6 +354,34 @@ hr {
   }
 }
 
+/* Readable Text Width Constraints */
+.content-tile {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mobile - slightly wider for small screens */
+@media (max-width: 767px) {
+  .content-tile {
+    max-width: 100%;
+  }
+}
+
+/* Tablet and up - constrain for readability */
+@media (min-width: 768px) {
+  .content-tile {
+    max-width: 750px;
+  }
+}
+
+/* Desktop - optimal reading width */
+@media (min-width: 1024px) {
+  .content-tile {
+    max-width: 800px;
+  }
+}
+
 /* Utility Classes */
 .text-center { text-align: center; }
 .text-left { text-align: left; }
