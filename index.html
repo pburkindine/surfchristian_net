@@ -169,6 +169,43 @@
       border-radius: 3px;
       border-width: 7px 14px 7px 14px;
     }
+
+    /* Slow pulse animation for dove */
+    @keyframes slowPulse {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+      50% {
+        transform: scale(1.15);
+        opacity: 0.8;
+      }
+    }
+
+    .dove-pulse {
+      animation: slowPulse 2s ease-in-out 3;
+    }
+
+    .logo-dove {
+      transition: transform 0.2s;
+    }
+
+    /* Desktop: pulse on hover */
+    @media (min-width: 1024px) {
+      .logo-dove {
+        cursor: pointer;
+      }
+      .logo-dove:hover {
+        animation: slowPulse 2s ease-in-out 3;
+      }
+    }
+
+    /* Mobile/Tablet: show it's tappable */
+    @media (max-width: 1023px) {
+      .logo-dove {
+        cursor: pointer;
+      }
+    }
   </style>
 
   <!-- Bootstrap CSS -->
@@ -181,7 +218,7 @@
   <!-- Header -->
   <header class="header">
     <div class="logo-section">
-      <img src="peace-dove-2.png" alt="Peace Dove" class="logo-dove" />
+      <img id="peace-dove" src="peace-dove-2.png" alt="Peace Dove" class="logo-dove" />
       <a href="index.html">
         <img src="home.png" alt="Home" class="home-link" />
       </a>
@@ -531,6 +568,26 @@
 
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+  <script>
+    // Dove pulse animation on click (mobile/tablet only)
+    document.addEventListener('DOMContentLoaded', function() {
+      const dove = document.getElementById('peace-dove');
+      if (dove) {
+        dove.addEventListener('click', function() {
+          // Only trigger on mobile/tablet (viewport width < 1024px)
+          if (window.innerWidth < 1024) {
+            // Remove class if it exists to restart animation
+            dove.classList.remove('dove-pulse');
+            // Force reflow to restart animation
+            void dove.offsetWidth;
+            // Add class back
+            dove.classList.add('dove-pulse');
+          }
+        });
+      }
+    });
+  </script>
 
 </body>
 
