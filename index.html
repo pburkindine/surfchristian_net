@@ -409,7 +409,8 @@
 
     <hr width="10%" /><br/><br/>
 
-    <span style="font-size: 1.2rem; font-variant-caps: all-small-caps;"></span>"WHO WANTS.. TO LIVE.. FOREVA?"</span><br/><br/>
+    <span id="queen-toggle" style="font-size: 1.2rem; font-variant-caps: all-small-caps; cursor: pointer; text-decoration: underline; color: #0066cc; transition: opacity 0.2s ease;" onclick="toggleQueenArea()" onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">"WHO WANTS.. TO LIVE.. FOREVA?"</span>
+    <span id="queen-hint" style="font-size: 0.9rem; color: #888; margin-left: 8px;">👆 (click for more)</span><br/><br/>
       <br/><hr width="10%" /><br/>
       <!-- <br style="font-size: .9rem;">Look and on that note, we're THE body... and...<br/><br/>
 
@@ -417,10 +418,12 @@
 
         WE D-Durn WON.  WON.  Were the Body and did the Majesty and WON.<br/><br/!-->
 
-        BUILDED IT.  <u>BUILT</u>. IT.  beforehan' y'unnnerstän'. 😁  For YOU 😁</span><br/><br/>
+        BUILDED IT.  <u>BUILT</u>. <u>IT</u>.  beforehan' y'unnnerstän'. 😁  For YOU 😁</span><br/><br/>
 
 
+    <div id="queen-content" style="display: none; opacity: 0; transition: opacity 0.4s ease-in-out;">
     <hr width="10%" /><br/><br/>
+    <div style="font-size: 0.95rem; color: #666; font-style: italic; margin-bottom: 12px;">A little warmth & context, if you're curious 😊</div>
     <video width="300" height="200" controls preload="metadata">
       <source src="https://pub-c91f85c61c284c85878c5ed593bb74f2.r2.dev/queen-who-wants-to-live-forever.mp4" type="video/mp4">
     </video><br/><br/>
@@ -434,6 +437,7 @@
       <source src="https://pub-51395a732b9c4f1589de833482bcf527.r2.dev/space-showts.mp4" type="video/mp4">
     </video>
     'YES YES YES YES YES YES YES YES!!!'<br/><br/>
+    </div>
 
 </p></center>
 
@@ -638,6 +642,29 @@
         });
       }
     });
+
+    // Toggle Queen area content
+    function toggleQueenArea() {
+      const content = document.getElementById('queen-content');
+      const hint = document.getElementById('queen-hint');
+      const toggle = document.getElementById('queen-toggle');
+
+      if (content.style.display === 'none') {
+        content.style.display = 'block';
+        setTimeout(() => {
+          content.style.opacity = '1';
+        }, 10);
+        hint.textContent = '👆 (click to hide)';
+        toggle.style.color = '#004499';
+      } else {
+        content.style.opacity = '0';
+        setTimeout(() => {
+          content.style.display = 'none';
+        }, 400);
+        hint.textContent = '👆 (click for more)';
+        toggle.style.color = '#0066cc';
+      }
+    }
   </script>
 
 </body>
