@@ -271,6 +271,12 @@ hr {
     width: 100%;
     max-width: 100%;
   }
+
+  /* Mobile padding for content divs */
+  div[style*="max-width: 800px"] {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
 }
 
 /* Tablet Styles */
